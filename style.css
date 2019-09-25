@@ -122,14 +122,31 @@ main {
 }
 
 body {
-    background-color: rgb(255 253 239);
+    background-color: #FFFAFA;
     font-family: lato;
     font-size: 18px;
     line-height: 28px;
 }
 
 header {
-    display: none;
+    /*display: none;*/
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding-top: 40px;
+}
+
+header .header-brand{
+    font-family: merriweather;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 70px;
+    display: block;
+    color: #111;
+    margin: 0 auto;
+    text-align: center;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -156,11 +173,16 @@ header {
     display: table;
 }
 
+.menu-wrapper {
+    padding: 20px;
+}
+
 .index-links div {
-    margin: 16px 16px 0;
-    width: calc(100% - 32px);
-    height: 100px;
+    margin: 16px 8px 0;
+    width: calc(50% - 16px);
+    height: 175px;
     background-color: rgb(255 250 179);
+    float: left;
 }
 
 .index-links div h3 {
