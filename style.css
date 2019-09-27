@@ -115,11 +115,13 @@ main {
     padding-top: 30px;
 }
 
+/*
 @media only screen and (min-width: 1000px) {
     main {
         padding-top: 100px;
     }
 }
+*/
 
 body {
     background-color: #FFFAFA;
@@ -174,6 +176,7 @@ header nav ul li {
 }
 
 
+/*
 @media only screen and (min-width: 1000px) {
     header {
         display: block;
@@ -191,16 +194,32 @@ header nav ul li {
         text-transform: uppercase;
     }
 }
+*/
 
 /* INDEX */
 
 .index-banner {
-    display: table;
+    padding: 8px 32px;
+    display: block;
+    height: 16vh;
+}
+
+.index-banner div h2 {
+    font-size: 24px;
+    text-align: right;
+    /* make height this responsive*/
+    line-height: 8;
 }
 
 .menu-wrapper {
     padding: 20px;
 }
+
+/*
+.profile-pic {
+    float: left;
+}
+*/
 
 .index-links div {
     margin: 16px 8px 0;
