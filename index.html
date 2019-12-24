@@ -4,77 +4,69 @@
         <meta charset="UTF-8">
         <title>Manda Tran</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" 
-              rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" 
-              rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/af93cb003d.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
+        <div class="menu" id="myMenu">
+            <a href="#home" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myMenu");
+                if (x.className === "menu") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "menu";
+                }
+            }
+        </script>
+
         <header>
-            <a href="index.html" class="header-brand">Manda Tran</a>
-            <!--My Menu-->
-            <nav class="menu">
-                <!--change links once pages are made-->
-                <ul>
-                    <li><a class="btn" href="https://www.linkedin.com/in/manda-tran/"
-                            target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a></li>
-                    <li><a class="btn" href="https://github.com/mandatran"
-                            target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a></li>
-                    <li><a class="btn" href="mailto:mandatran@roadrunner.com">
-                            <i class="far fa-envelope"></i>
-                        </a></li>
-                </ul>
-            </nav>
+            <h1>My First Heading</h1>
+            <p>My first paragraph</p>
         </header>
-        <main>
-        <section class="index-banner">
-            <div>
-                <h2>Get to know me:</h2>
+
+        <div class="flex-container">
+            <div class="student">
+                <!--<a href="https://github.com/mandatran">This is my Github</a>
+                -->
+                <div class="student-inner">
+                    <div class="student-img">
+                        <img src="img/testImg.jpg" alt="test image">
+                    </div>
+                    <div class="student-info">
+                        <h1>"The Student"</h1>
+                        <p>UCSD</p>
+                    </div>
+                </div>
             </div>
-        </section>
-        <div class="profile-pic">
-            <p>Image Here</p>
+
+            <div class="programmer">
+                <p>container 2</p>
+            </div>
+
+            <div class="artist">
+                <p>container 3</p>
+            </div>
+
+            <div class="person">
+                <p>container 4</p>
+            </div>
         </div>
-        <div class="menu-wrapper">
-            <section class="index-links">
-                <a href="#">
-                    <div>
-                        <h3>manda, the student</h3>
-                    </div>
-                </a>
-                <a href="#">
-                    <div>
-                        <h3>manda, the coder</h3>
-                    </div>
-                </a>
-                <a href="#">
-                    <div>
-                        <h3>manda, the artist</h3>
-                    </div>
-                </a>
-                <a href="#">
-                    <div>
-                        <h3>manda, the human</h3>
-                    </div>
-                </a>
-            </section>
-        </div>
-        <div class="about-me">
-            <p>Or get to know me all at once</p>
-            <section class="about-me-button">
-                <a href="#">
-                    <div>
-                        <h4>About Me</h4>
-                    </div>
-                </a>
-            </section>
-        </div>
-        </main>
+
+        <button>View All</button>
     </body>
 </html>
