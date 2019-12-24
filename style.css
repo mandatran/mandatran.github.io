@@ -151,10 +151,11 @@ p {
     font-size: 32px;
 }
 
-.menu a:hover {
+.menu > a:hover {
     color: #ff5d50;
     font-weight: bold;
     font-size: 18px;
+    padding-bottom: 4px;
 }
 
 .menu a.active {
