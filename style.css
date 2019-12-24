@@ -117,9 +117,11 @@ body {
 }
 
 h1 {
-    color: #EFE2BA;
+    color: #85DCCB;
     text-align: center;
+    line-height: 72px;
     font-family: Oswald;
+    font-size: 48px;
 }
 
 p {
@@ -186,3 +188,33 @@ p {
     font-size: 35px;
     background-color: #ff5d50;
 }
+
+
+/* Style for About Page */
+
+.about-wrapper {
+    padding: 20px 80px;
+}
+
+.profile-pic {
+    float: left;
+    max-width: 50%;
+}
+
+/* Responsive Profile Pic */
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+/* Format about me text placement */
+.about-text {
+    float: left;
+    max-width: 50%;
+}
+
+/* Style About text */
+.about-text p {
+    margin: 0px 0px 0px 40px;
+}
+    
