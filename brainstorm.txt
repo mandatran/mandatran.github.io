@@ -2,7 +2,7 @@ https://visme.co/blog/website-color-schemes/
 
 1.  Colorful and Balanced
     #E27D60 - muted orange
-    #85DCB  - light blue
+    #85DCCB  - light blue
     #E8A87C - apricot
     #C38D9E - light purple
     #41B3A3 - teal
