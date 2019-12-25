@@ -102,10 +102,11 @@ input, select {
 }
 
 
-/* MY CODE
+/******************************************************************************
+ * MY CODE
  * Author: Manda Tran
- * Last Updated: 2019-09-22
- */
+ * Last Updated: 2019-12-24
+ ******************************************************************************/
 
 * {
     color: #EFE2BA;
@@ -133,6 +134,7 @@ p {
     padding: 14px 16px;
 }
 
+/* Styles each menu link */
 .menu > a {
     float: right;
     display: block;
@@ -143,6 +145,7 @@ p {
     font-size: 16px;
 }
 
+/* Styles my name/home link in the top menu bar */
 .menu-left a {
     float: left;
     display: block;
@@ -164,7 +167,7 @@ p {
     color: #E27D60;
 }
 
-/* Fix the icon bar to be on the left 50% from the top */
+/* Fixes the icon bar to be on the left 50% from the top */
 .social-icons {
     position: fixed;
     top: 50%;
@@ -190,7 +193,9 @@ p {
 }
 
 
-/* Style for About Page */
+/******************************************************************************
+ * About Page
+ ******************************************************************************/
 
 .about-wrapper {
     padding: 20px 80px;
@@ -218,3 +223,66 @@ p {
     margin: 0px 0px 0px 40px;
 }
     
+/******************************************************************************
+ * Portfolio Page
+ ******************************************************************************/
+
+/* Format art portfolio header */
+.portfolio-header h2 {
+    color: #85DCCB;
+    text-align: center;
+    line-height: 108px;
+    font-family: Oswald;
+    font-size: 72px;
+}
+
+.gallery-wrapper {
+    margin: auto;
+    width: 80%;
+    padding-top: 30px;
+}
+
+.gallery-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.gallery-flexbox img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.art-container {
+    position: relative;
+    margin: auto;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.art-container:hover .image {
+    opacity: 0.3;
+}
+
+.art-container:hover .middle {
+    opacity: 1;
+}
