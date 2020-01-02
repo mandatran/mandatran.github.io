@@ -146,6 +146,15 @@ p {
 }
 
 /* Styles my name/home link in the top menu bar */
+.menu a.active {
+    color: #E27D60;
+}
+
+.menu-left a:hover {
+    color: #ff5d50;
+    font-weight: bold;
+}
+
 .menu-left a {
     float: left;
     display: block;
@@ -159,12 +168,6 @@ p {
 .menu > a:hover {
     color: #ff5d50;
     font-weight: bold;
-    font-size: 18px;
-    padding-bottom: 4px;
-}
-
-.menu a.active {
-    color: #E27D60;
 }
 
 /* Fixes the icon bar to be on the left 50% from the top */
@@ -186,10 +189,22 @@ p {
     font-size: 30px;
 }
 
-/* Increase size and turns red if hover over icon */
+/* Increase size of social icons when hovering */
 .social-icons a:hover {
     font-size: 35px;
-    background-color: #ff5d50;
+}
+
+/* Changes social icons to red when hover */
+.fa-envelope-square:hover {
+    color: #ff5d50;
+}
+
+.fa-linkedin:hover {
+    color: #ff5d50;
+}
+
+.fa-github-square:hover {
+    color: #ff5d50;
 }
 
 
