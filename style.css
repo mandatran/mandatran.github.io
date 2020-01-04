@@ -167,7 +167,6 @@ p {
 
 .menu > a:hover {
     color: #ff5d50;
-    font-weight: bold;
 }
 
 /* Fixes the icon bar to be on the left 50% from the top */
@@ -218,7 +217,7 @@ body, html {
 
 .bg-image {
   /* The image used */
-  background-image: url("img/homePic.png");
+  background-image: url("img/homePicGreen.png");
 
   /* Full height */
   height: 100%;
