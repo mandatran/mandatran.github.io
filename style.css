@@ -133,6 +133,17 @@ p {
     font-family: Montserrat;
 }
 
+@media screen and (max-width: 600px) {
+    h1 {
+        line-height: 48px;
+        font-size: 36px
+    }
+}
+
+
+/******************************************************************************
+ * Navigation Bar
+ ******************************************************************************/
 .menu {
     overflow: hidden;
     padding: 14px 16px 0px;
@@ -172,6 +183,11 @@ p {
 .menu-right > a:hover {
     color: #ff5d50;
 }
+
+
+/******************************************************************************
+ * Social Media Sticky Bar
+ ******************************************************************************/
 
 /* Fixes the icon bar to be on the left 50% from the top */
 .social-icons {
@@ -366,6 +382,16 @@ section {
     float: left;
     max-width: 50%;
 }
+/*
+.social-icons {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+*/
 
 /* Responsive Profile Pic */
 .profile-pic img {
@@ -381,17 +407,42 @@ section {
 }
 
 /* Style About text */
+.about-text h1 {
+    padding: 20px;
+}
+
+.about-text a {
+    display: inline;
+    color: #E27D60;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*
+.about-text a:link {
+    color: #efe2e0;
+    text-decoration: none;
+}
+*/
+
 .about-text p {
     margin-left: 40px;
     margin-right: 15%;
     line-height: 2;
 }
 
+
 /* Responsive design */
+@media screen and (max-width: 1070px) {
+    .profile-pic {
+        padding-top: 100px;
+    }
+}
+    
 @media screen and (max-width: 800px) {
     .profile-pic {
         float: none;
         max-width: 100%;
+        padding-top: 50px;
     }
 
     .profile-pic img {
@@ -509,4 +560,33 @@ section {
 
 .art-container:hover .middle {
     opacity: 1;
+}
+
+
+/******************************************************************************
+ * Contact Page
+ ******************************************************************************/
+
+@media screen and (max-width: 600px) {
+
+    .contact-text {
+        padding-top: 30px;
+        width: 85%;
+        margin: auto;
+    }
+
+    .contact-text h1 {
+        padding: 20px;
+    }
+
+    .contact-text a {
+        float: none;
+        display: block;
+        text-decoration: none;
+        line-height: 2;
+    }
+
+    .contact-text a:hover {
+        color: #ff5d50;
+    }
 }
