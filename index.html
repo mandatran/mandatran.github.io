@@ -14,7 +14,7 @@
     </head>
 
     <body>
-        <div class="bg-image">
+        <div id="top" class="bg-image">
             <!-- Top menu bar and name link -->
             <div class="menu" id="myMenu">
                 <a href="./about.html">About</a>
@@ -35,16 +35,30 @@
                     target="_blank"><i class="fab fa-github-square"></i></a>
             </div>
         </div>
-        <div class="projects-link">
-            <a href="#project-section">Projects 
-                <br><i class="down-arrow"></i></a>
-        </div>
+
+        <!-- Scroll down to see projects link -->
+        <section id="scroll-down" class="projects-link">
+            <a href="#project-section">Projects<span></span></a>
+        </section>
 
         <div class="Projects" id="project-section">
-            <h1>Projects</h1>
-            <p>Coming Soon!</p>
+            <div class="My-Projects">
+                <h1>Projects</h1>
+                <p>Coming Soon!</p>
+            </div>
+
+            <!-- Scroll to top -->
+            <section id="scroll-up" class="projects-link">
+                <a href="#top"><span></span>Back to Top</a>
+            </section>
         </div>
 
+        <!--
+        <div class="back-to-top">
+            <a href="#top">Back to Top
+                <br><i class="up-arrow"></i></a>
+        </div>
+        -->
 
     </body>
 </html>
