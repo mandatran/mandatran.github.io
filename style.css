@@ -366,6 +366,21 @@ body, html {
     font-size: 18px;
 }
 
+/* Responsive Design */
+/* Tablets: show 2 projects per row */
+@media screen and (max-width: 1024px) {
+    .projects-flex > div {
+        width: 42%;
+    }
+}
+
+/* Smartphones: show 1 projects per row */
+@media screen and (max-width: 650px) {
+    .projects-flex > div {
+        width: 85%;
+    }
+}
+
 /******************************************************************************
  * About Page
  ******************************************************************************/
