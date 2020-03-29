@@ -279,7 +279,7 @@ body, html {
  *          - bounce when hover over
  ******************************************************************************/
 .project-section {
-    height: 100%;
+    height: auto;
     padding-top: 30px;
     width: 85%;
     margin: auto;
@@ -305,6 +305,7 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .projects-flex > div {
@@ -363,12 +364,6 @@ body, html {
 
 .projects-flex a {
     font-size: 18px;
-}
-
-.column {
-    flex: 20%;
-    max-width: 25%;
-    padding: 0 4px;
 }
 
 /******************************************************************************
@@ -631,4 +626,53 @@ body, html {
     .contact-list a {
         font-size: 12px;
     }
+}
+
+/******************************************************************************
+ * Footer
+ ******************************************************************************/
+footer {
+    padding: 60px 0px;
+    width: 85%;
+    margin: auto;
+}
+
+footer p {
+    display: flex;
+    float: left;
+    color: #919191;
+}
+
+footer .footer-links {
+    display: flex;
+    float: right;
+}
+
+.footer-links a {
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    color: #919191;
+}
+
+.footer-links a:hover {
+  font-weight: bold;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.footer-links a#blue:hover {
+    background-color: #148eff22;
+}
+.footer-links a#red:hover {
+    background-color: #ff040022;
+}
+.footer-links a#yellow:hover {
+    background-color: #ffc80022;
+}
+.footer-links a#green:hover {
+    background-color: #00ff0422;
+}
+.footer-links a#purple:hover {
+    background-color: #9900ff22;
 }
