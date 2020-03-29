@@ -366,6 +366,10 @@ body, html {
     font-size: 18px;
 }
 
+.projects-flex > div a {
+    text-decoration: none;
+}
+
 /* Responsive Design */
 /* Tablets: show 2 projects per row */
 @media screen and (max-width: 1024px) {
@@ -657,6 +661,7 @@ footer p {
     display: flex;
     float: left;
     color: #919191;
+    padding: 16px;
 }
 
 footer .footer-links {
@@ -666,7 +671,7 @@ footer .footer-links {
 
 .footer-links a {
     text-align: center;
-    padding: 0px 16px;
+    padding: 16px;
     text-decoration: none;
     color: #919191;
 }
