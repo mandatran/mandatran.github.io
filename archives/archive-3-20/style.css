@@ -105,12 +105,12 @@ input, select {
 /******************************************************************************
  * MY CODE
  * Author: Manda Tran
- * Last Updated: 2020-3-28
+ * Last Updated: 2019-12-24
  ******************************************************************************/
 
 * {
-    color: #111111;
-    font-family: 'Montserrat', sans-serif;
+    color: #efe2e0;
+    font-family: Montserrat;
 }
 
 html {
@@ -118,23 +118,19 @@ html {
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #1a1a1a;
 }
 
 h1 {
+    color: #85DCCB;
+    text-align: center;
     line-height: 72px;
-    font-weight: 900;
+    font-family: Oswald;
     font-size: 48px;
 }
 
-h2 {
-    font-weight: 700;
-    line-height: 36px;
-    font-size: 28px
-}
-
 p {
-    font-weight: 500;
+    font-family: Montserrat;
 }
 
 @media screen and (max-width: 600px) {
@@ -144,71 +140,107 @@ p {
     }
 }
 
+
 /******************************************************************************
- * Top Navigation Bar
- * sources: https://www.w3schools.com/howto/howto_js_topnav.asp
- *          - top navigation
- *          https://www.impressivewebs.com/css3-border-radius-hover/
- *          - for rounded edges on link hover
+ * Navigation Bar
  ******************************************************************************/
-.topnav {
-  overflow: hidden;
-  padding: 14px 16px 0px;
+.menu {
+    overflow: hidden;
+    padding: 14px 16px 0px;
 }
 
-/* Style the links inside the navigation bar */
-.menu-right a {
-  float: right;
-  text-align: center;
-  padding: 16px 18px;
-  text-decoration: none;
-  font-size: 17px;
+/* Styles each menu link */
+.menu-right > a {
+    float: right;
+    display: block;
+    color: #efe2e0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
 }
+
+/* Styles my name/home link in the top menu bar */
+.menu-right a.active {
+    color: #E27D60;
+}
+
+.menu-left a:hover {
+    color: #ff5d50;
+    font-weight: bold;
+}
+
 .menu-left a {
-  float: left;
-  text-align: center;
-  padding: 16px 18px;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: 700;
+    float: left;
+    display: block;
+    color: #E27D60;
+    padding: 6px 16px;
+    text-decoration: none;
+    font-family: Galada;
+    font-size: 32px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  font-weight: bold;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
-.topnav a#red:hover {
-    background-color: #ff040022;
-}
-.topnav a#yellow:hover {
-    background-color: #ffc80022;
-}
-.topnav a#green:hover {
-    background-color: #00ff0422;
-}
-.topnav a#purple:hover {
-    background-color: #9900ff22;
+.menu-right > a:hover {
+    color: #ff5d50;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-    text-decoration: underline;
+
+/******************************************************************************
+ * Social Media Sticky Bar
+ ******************************************************************************/
+
+/* Fixes the icon bar to be on the left 50% from the top */
+.social-icons {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-/* Responsive layout */
+/* Style the icons */
+.social-icons a {
+    display: block;
+    text-align: center;
+    padding: 14px 30px 14px 14px;
+    transition: all 0.3s ease;
+    color: #efe2e0;
+    font-size: 30px;
+}
+
+/* Do not display mobile contact page */
+.mobile-contact {
+    display: none;
+    visibility: hidden;
+}
+
+/* Increase size of social icons when hovering */
+.social-icons a:hover {
+    font-size: 35px;
+}
+
+/* Changes social icons to red when hover */
+.fa-envelope-square:hover {
+    color: #ff5d50;
+}
+
+.fa-linkedin:hover {
+    color: #ff5d50;
+}
+
+.fa-github-square:hover {
+    color: #ff5d50;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .menu-left {
       width: 100%;
-      overflow: auto;
   }
   .menu-left a {
-      margin: auto;
-      width: 100%;
+      float: none;
       text-align: center;
-      padding: 18px 0px;
   }
 
   .menu-right {
@@ -218,13 +250,24 @@ p {
   .menu-right a {
         float: left;
         padding: 0px;
+        color: white;
         text-decoration: none;
         font-size: 16px;
         width: 25%; /* Four links of equal widths */
         text-align: center;
         padding-bottom: 12px;
   }
+
+  .social-icons {
+      display: none;
+  }
+
+  .mobile-contact {
+      display: inline;
+      visibility: visible;
+  }
 }
+
 
 /******************************************************************************
  * Home Page
@@ -235,140 +278,96 @@ body, html {
 }
 
 .home-wrapper {
-    height: 100%;
+    height: 92%;
 }
 .bg-image {
     /* The image used */
-    background-image: url("img/logo.gif");
+    background-image: url("img/home!.png");
 
     /* Full height */
-    height: 75%;
+    height: 92%;
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
-/******************************************************************************
- * Home Page Contact Icons
- ******************************************************************************/
-
-/* Style the icons */
-.social-icons {
-  position: absolute;
-  bottom: 12%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-.social-icons a {
-    text-align: center;
-    padding: 14px 50px 14px 14px;
-    transition: all 0.3s ease;
-    color: #efe2e0;
-    font-size: 50px;
-}
-.social-icons a:hover {
-    font-size: 55px;
-}
-
-/******************************************************************************
- * Home Page Project Section
- * Sources: https://codepen.io/halink0803/pen/qdVXqm
- *          - bounce when hover over
- ******************************************************************************/
-.project-section {
+section {
+    position: relative;
+    width: 100%;
     height: 100%;
-    padding-top: 30px;
-    width: 85%;
-    margin: auto;
 }
 
-.project-header {
-    margin: auto;
-    padding: 10px;
+/* Link to scroll to Projects section */
+.projects-link {
+    height: 6%;
     text-align: center;
 }
 
-.project-header h1 {
-    display: inline-block;
-    text-align: center;
-    background-color: #ffc80022;
-    padding: 10px 10px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-}
-
-.projects-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.projects-flex > div {
-    background-color: #ffc80022;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    width: 30%;
-    height: 250px;
-    margin: 10px;
-    text-align: center;
-    /* allows to bounce with hover */
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-}
-
-/* bounce when hover over */
-@keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-		-webkit-transform: translateY(0);
-		-ms-transform:     translateY(0);
-		transform:         translateY(0)
-	}
-	40% {
-		-webkit-transform: translateY(-30px);
-		-ms-transform:     translateY(-30px);
-		transform:         translateY(-30px)
-	}
-	60% {
-		-webkit-transform: translateY(-15px);
-		-ms-transform:     translateY(-15px);
-		transform:         translateY(-15px)
-	}
-}
-.projects-flex > div:hover {
-  cursor: pointer;
-  animation-name: bounce;
-  -moz-animation-name: bounce;
-}
-
-
-.projects-flex h2 {
-    margin: 12px;
-    line-height: 24px;
-}
-
-.projects-flex p {
-    font-size: 16px;
-}
-
-.projects-flex a {
+.projects-link a {
+    text-decoration: none;
     font-size: 18px;
 }
 
-.column {
-    flex: 20%;
-    max-width: 25%;
-    padding: 0 4px;
+.projects-link a:hover {
+    opacity: .5;
+}
+
+#scroll-down a span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+    padding-bottom: 1%;
+}
+
+.Projects {
+    height: 100%;
+}
+
+.My-Projects {
+    height: 92%;
+}
+
+.Projects h1 {
+    margin-top: 50px;
+}
+
+.Projects p {
+    font-family: Galada;
+    margin: 80px auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+#scroll-up span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    margin-bottom: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    box-sizing: border-box;
+    padding-bottom: 1%;
+}
+
+@media screen and (max-width: 600px) {
+    .bg-image {
+        margin-top: -20px;
+    }
 }
 
 /******************************************************************************
@@ -395,20 +394,11 @@ body, html {
 .about-text {
     float: left;
     max-width: 50%;
-    margin: auto;
 }
 
 /* Style About text */
 .about-text h1 {
-    margin-left: 40px;
-    margin-right: 15%;
-    display: inline-block;
-    text-align: center;
-    background-color: #ff040022;
-    padding: 10px 10px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
+    padding: 20px;
 }
 
 .about-text a {
@@ -422,7 +412,7 @@ body, html {
     margin-left: 40px;
     margin-right: 15%;
     line-height: 2;
-    text-align: left;
+    text-align: justify;
     text-justify: inter-word;
 }
 
@@ -453,15 +443,6 @@ body, html {
     .about-text {
         float: none;
         max-width: 100%;
-        margin-top: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .about-text h1 {
-        display: inline-block;
     }
 
     .about-text p {
@@ -475,6 +456,9 @@ body, html {
         padding: 10px 25px;
     }
 
+    .about-text h1 {
+        padding: 10px 0px;
+    }
 }
 
     
@@ -483,21 +467,12 @@ body, html {
  ******************************************************************************/
 
 /* Format art portfolio header */
-.portfolio-header {
-    margin: auto;
-    width: 40%;
-    padding: 10px;
+.portfolio-header h2 {
+    color: #85DCCB;
     text-align: center;
-}
-
-.portfolio-header h1 {
-    display: inline-block;
-    text-align: center;
-    background-color: #00ff0422;
-    padding: 10px 10px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
+    line-height: 108px;
+    font-family: Oswald;
+    font-size: 72px;
 }
 
 .gallery-wrapper {
@@ -588,47 +563,26 @@ body, html {
  * Contact Page
  ******************************************************************************/
 
-.contact-wrapper {
-    padding-top: 30px;
-    width: 85%;
-    margin: auto;
-}
-
-.contact-text header {
-    margin: auto;
-    width: 40%;
-    padding: 10px;
-    text-align: center;
-}
-
-.contact-header h1 {
-    display: inline-block;
-    text-align: center;
-    background-color: #9900ff22;
-    padding: 10px 10px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-}
-
-.contact-list a {
-    text-decoration: none;
-    font-size: 24px;
-    line-height: 2;
-}
-
-.contact-list a:hover {
-    color: #9900ff;
-}
-
-/* Responsive layout */
 @media screen and (max-width: 600px) {
-    .contact-list a {
-        font-size: 16px;
+
+    .contact-text {
+        padding-top: 30px;
+        width: 85%;
+        margin: auto;
     }
-}
-@media screen and (max-width: 450px) {
-    .contact-list a {
-        font-size: 12px;
+
+    .contact-text h1 {
+        padding: 20px;
+    }
+
+    .contact-text a {
+        float: none;
+        display: block;
+        text-decoration: none;
+        line-height: 2;
+    }
+
+    .contact-text a:hover {
+        color: #ff5d50;
     }
 }
