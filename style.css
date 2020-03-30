@@ -205,30 +205,39 @@ p {
 }
 
 /* Responsive layout */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .menu-left {
       width: 100%;
       overflow: auto;
+      padding: 0px;
   }
   .menu-left a {
+      float: left;
       margin: auto;
+      overflow: auto;
       width: 100%;
       text-align: center;
       padding: 18px 0px;
   }
 
   .menu-right {
-      width: 100%;
+      width: 90%;
+      margin: auto;
       overflow: auto;
+      display: flex;
+      float: none;
+      justify-content: center;
+      align-items: center;
   }
   .menu-right a {
-        float: left;
-        padding: 0px;
-        text-decoration: none;
-        font-size: 16px;
-        width: 25%; /* Four links of equal widths */
-        text-align: center;
-        padding-bottom: 12px;
+      display: inline-block;
+      margin: auto;
+      overflow: auto;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 12px 0px;
+      width: 25%; /* Four links of equal widths */
+      text-align: center;
   }
 }
 
