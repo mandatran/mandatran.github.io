@@ -323,7 +323,7 @@ body, html {
     align-items: center;
 }
 
-.projects-flex > div {
+.projects-flex .col {
     background-color: #ffc80022;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -332,39 +332,10 @@ body, html {
     height: 250px;
     margin: 10px;
     text-align: center;
-    /* allows to bounce with hover */
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
 }
 
-/* bounce when hover over */
-@keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-		-webkit-transform: translateY(0);
-		-ms-transform:     translateY(0);
-		transform:         translateY(0)
-	}
-	40% {
-		-webkit-transform: translateY(-30px);
-		-ms-transform:     translateY(-30px);
-		transform:         translateY(-30px)
-	}
-	60% {
-		-webkit-transform: translateY(-15px);
-		-ms-transform:     translateY(-15px);
-		transform:         translateY(-15px)
-	}
-}
-.projects-flex > div:hover {
-  cursor: pointer;
-  animation-name: bounce;
-  -moz-animation-name: bounce;
+.projects-flex .col:hover {
+    background-color: #ffc80055;
 }
 
 
@@ -379,35 +350,69 @@ body, html {
 
 .projects-flex a {
     font-size: 18px;
-}
-
-.projects-flex > div a {
     text-decoration: none;
 }
 
-a.fill-div {
-    display: block;
-    width: 100%;
-    text-decoration: none;
-}
-
-.projects-flex > div a:hover {
+.projects-flex h2:hover {
     text-decoration: underline;
 }
 
 /* Responsive Design */
 /* Tablets: show 2 projects per row */
 @media screen and (max-width: 1024px) {
-    .projects-flex > div {
+    .projects-flex .col {
         width: 42%;
     }
 }
 
 /* Smartphones: show 1 projects per row */
 @media screen and (max-width: 650px) {
-    .projects-flex > div {
+    .projects-flex .col {
         width: 85%;
     }
+}
+
+/******************************************************************************
+ * Web Archives Page
+ ******************************************************************************/
+
+.back {
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+}    
+
+.back a {
+    text-decoration: none;
+}
+.back a:hover {
+    text-decoration: underline;
+}
+
+.web-archive-wrapper {
+    padding-top: 30px;
+    width: 85%;
+    margin: auto;
+}
+
+.web-archive-header h1 {
+    display: inline-block;
+    text-align: center;
+    background-color: #ffc80022;
+    padding: 10px 10px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.web-archive-list a {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 2;
+}
+
+.web-archive-list a:hover {
+    color: #ffc800;
 }
 
 /******************************************************************************
