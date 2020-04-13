@@ -116,7 +116,7 @@ h1 {
     font-family: 'Bebas Neue', cursive;
     color: #E50914;
     font-size: 72px;
-    line-height: 80px;
+    line-height: 96px;
 }
 
 html {
@@ -214,6 +214,7 @@ body {
  * Home Page
  ******************************************************************************/
 .home-descrip {
+    padding-top: 80px;
     width: 75%;
     margin: auto;
 }
@@ -222,6 +223,22 @@ body {
     text-align: center;
 }
 .home-descrip p {
+    text-align: center;
+}
+
+/******************************************************************************
+ * About Page
+ ******************************************************************************/
+.about-descrip {
+    padding-top: 80px;
+    width: 75%;
+    margin: auto;
+}
+
+.about-descrip h1 {
+    text-align: center;
+}
+.about-descrip p {
     text-align: center;
 }
 
