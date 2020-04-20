@@ -223,7 +223,19 @@ body {
 .home-descrip h1 {
     text-align: center;
 }
+
 .home-descrip p {
+    text-align: center;
+}
+
+.netflix-rec {
+    margin: auto;
+    padding: 80px;
+}
+
+.iframe {
+    display: block;
+    margin: auto;
     text-align: center;
 }
 

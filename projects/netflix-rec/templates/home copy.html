@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Abel|Bebas+Neue&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/af93cb003d.js" 
             crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
 
     <body>
@@ -35,13 +35,22 @@
                 <p>Hello! &#128296 This Site is Under Construction!</p>
             </div>
 
-            <div class="netflix-rec">
-                <script src="https://anvil.works/embed.js" async></script>
-                <p align="center"><iframe style="width:60%;" data-anvil-embed 
-                                          src="https://NUNGNTICOS7WNZTZ.anvil.app/2OTG6O42X3LN3RWFI3YJ6GCF"></iframe></p>
-            </div>
         </div>
-
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <ul>
+                            {% for message in messages %}
+            <li>{ { message[1] }}</li>
+        {% endfor %}</ul>
+        {% endif %}
+        {% endwith %}
+        <form action="" method="post">
+                    &#123; &#123; form.csrf &#125;&#125;
+        <div class="input text">
+                        { { form.name.label }} { { form.name }}</div>
+        <div class="input submit">
+                        <input type="submit" value="Submit"></div>
+        </form>
     </body>
 
     <!-- Footer -->

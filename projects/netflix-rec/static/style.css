@@ -160,6 +160,7 @@ body {
   font-size: 17px;
   font-weight: 700;
   padding: 16px 18px;
+  text-decoration: underline;
 }
 
 /* Change the color of links on hover */
@@ -285,11 +286,12 @@ footer .footer-links {
     }
 
     footer .footer-links {
-        display: block;
-        width: 100%;
+        display: flex;
+        width: 90%;
+        margin: auto;
+        float: none;
         justify-content: center;
         align-items: center;
-        float: none;
     }
     
     footer .footer-links a {
