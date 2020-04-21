@@ -252,7 +252,36 @@ body {
     text-align: center;
 }
 .about-descrip p {
-    text-align: center;
+    line-height: 24px;
+    font-size: 18px;
+    padding: 15% 0px;
+}
+.about-text {
+    width: 50%;
+    float: right;
+    margin: auto;
+}
+.about-gif {
+    width: 40%;
+    float: left;
+    vertical-align: text-bottom;
+}
+.about-gif img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+    .about-text {
+        width: 100%;
+        float: none;
+        display: inline-block;
+    }
+    .about-gif {
+        width: 100%;
+        float: none;
+    }
 }
 
 /******************************************************************************
