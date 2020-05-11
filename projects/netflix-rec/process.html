@@ -10,10 +10,11 @@
         <script src="https://kit.fontawesome.com/af93cb003d.js" 
             crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="processStyle.css">
     </head>
 
     <body>
-        <div class="home-wrapper">
+        <div class="home-wrapper" id="process-title">
             <!-- top navigation -->
             <div class="topnav">
                 <div class="menu-left">
@@ -25,6 +26,51 @@
                     <a href="discussion.html">Discussion</a>
                     <a href="process.html" class="active">Process</a>
                 </div>
+            </div>
+        </div>
+        <!-- process navigation -->
+        <nav class="process-nav">
+            <ul>
+                <li><a href="#process-title">Process</a></li>
+                <ul>
+                    <li><a href="#background">Background</a></li>
+                    <li><a href="#cleaning">Cleaning Data</a></li>
+                    <li><a href="#exploratory">Exploratory Analysis</a></li>
+                    <li><a href="#build">Building the Recommendation System</a></li>
+                    <li><a href="#examples">Recommendation System in Action</a></li>
+                </ul>
+                <li><a href="#jupyter">Full Jupyter Notebook</a></li>
+                <li><a href="#ignite">Ignite Presentation Slides</a></li>
+            </ul>
+            <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+            </svg>
+        </nav>
+
+        <div class="process-content">
+            <div class="process-container">
+                <h1>Process</h1>
+                <div class="background-info" id="background">
+                    <h2>Background Information</h2>
+                </div>
+                <div class="cleaning-data" id="cleaning">
+                    <h2>Cleaning the Data</h2>
+                </div>
+                <div class="exploratory-analysis" id="exploratory">
+                    <h2>Exploratory Analysis</h2>
+                </div>
+                <div class="build-rec" id="build">
+                    <h2>Building the Recommendation System</h2>
+                </div>
+                <div class="examples-rec" id="examples">
+                    <h2>The Recommendation System in Action</h2>
+                </div>
+            </div>
+            <div class="jupyter-notebook" id="jupyter">
+                <h1>Full Jupter Notebook</h1>
+            </div>
+            <div class="ignite-slides" id="ignite">
+                <h1>Ignite Presentation Slides</h1>
             </div>
         </div>
     </body>
@@ -39,4 +85,7 @@
             <a href="process.html">Process</a>
         </div>
     </footer>
+
+    <!-- implements functionality of side nav bar -->
+    <script src="process.js"></script>
 </html>
