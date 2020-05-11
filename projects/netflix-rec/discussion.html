@@ -10,10 +10,11 @@
         <script src="https://kit.fontawesome.com/af93cb003d.js" 
             crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="discussionStyle.css">
     </head>
 
     <body>
-        <div class="home-wrapper">
+        <div class="home-wrapper" id="discussion-title">
             <!-- top navigation -->
             <div class="topnav">
                 <div class="menu-left">
@@ -27,9 +28,21 @@
                 </div>
             </div>
         </div>
+        <nav class="discussion-nav">
+            <ul>
+                <li><a href="#discussion-title">Discussion</a></li>
+                <ul>
+                    <li><a href="#critique">Critique</a></li>
+                    <li><a href="#links">Links</a></li>
+                </ul>
+            </ul>
+            <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+            </svg>
+        </nav>
         <div class="discussion-content">
             <div class="disscussion-header">
-                <h1>Critique</h1>
+                <h1 id="critique">Critique</h1>
             </div>
             <div class="discussion-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -98,7 +111,7 @@
                     vel.</p>
             </div>
             <div class="links">
-                <h1">Links/Resources</h1>
+                <h1 id="links">Links/ Resources</h1>
                 <div class="row">
                     <div class="col">
                         <a href="https://google.com" target="_blank">
@@ -256,5 +269,5 @@
             <a href="process.html">Process</a>
         </div>
     </footer>
-    <script src="header.js"></script>
+    <script src="discussion.js"></script>
 </html>
