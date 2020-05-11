@@ -70,54 +70,57 @@ body {
 }
 
 .links {
-padding: 50px 0px;
+    padding: 50px 0px;
 }
 
 .links h1 {
-text-align: right;
+    text-align: right;
 }
 
 .col {
-float: left;
-width: 33%;
-padding: 10px;
-transition: transform .2s;
+    /*float: left;
+    */
+    display: table-cell;
+    width: 33%;
+    padding: 10px;
+    transition: transform .2s;
 }
 
 .col:hover {
-transform: scale(1.1);
-background-color: #E6CDCA;
+    transform: scale(1.1);
+    background-color: #E6CDCA;
 }
 
 .row {
-margin: 0 -5px;
+    margin: 0 -5px;
+    display: table;
 }
 
 .col p {
-margin: 24px;
+    margin: 24px;
 }
 
 .col a {
-text-decoration: none;
+    text-decoration: none;
 }
 
 .col h4 {
-margin: 24px;
-font-weight: bold;
-font-size: 24px;
+    margin: 24px;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .col h5 {
-margin: 0 24px;
-font-weight: lighter;
-font-style: italic;
-color: #555555;
+    margin: 0 24px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #555555;
 }
 
 .col h6 {
-margin: 0 24px;
-font-weight: lighter;
-font-size: 18px;
+    margin: 0 24px;
+    font-weight: lighter;
+    font-size: 18px;
 }
 
 #arrow {
@@ -130,13 +133,9 @@ font-size: 42px;
 }
 
 /* Responsive Design */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1400px) {
     .col {
-        width: 50%;
-    }
-}
-@media screen and (max-width: 1024px) {
-    .col {
+        display: block;
         width: 100%;
     }
 }
