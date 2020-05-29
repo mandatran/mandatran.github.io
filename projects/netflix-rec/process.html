@@ -52,9 +52,53 @@
                 <h1>Process</h1>
                 <div class="background-info" id="background">
                     <h2>Background Information</h2>
+                    <p>
+                        Since subscribing from Netflix in June 12, 2015, I have 
+                        watched 2,236 unique episodes and 95 unique movies (and 
+                        counting). My longest Netflix marathon (in a day) was 
+                        12 hours and 24 minutes long. I spend the greatest 
+                        amount of time on Netflix on Sundays. All this data was 
+                        collected from a Google Chrome Extension called 
+                        “Netflix Viewing Stats,” which can be found 
+                        <a href="https://chrome.google.com/webstore/detail/netflix-viewing-stats/bckfpnenhimfckndcceonmkhheinmkob?hl=en">here</a>. 
+                        Averaging over two hours a day on Netflix, I knew that 
+                        I wanted to create a recommendation system based on my 
+                        most-used streaming service.
+                    </p>
+                    <p>
+                        The recommendation system I will be implementing is a 
+                        content-based movie/tv show recommender, meaning that 
+                        content will be recommended based on a movie that a 
+                        user has watched by finding content similar to it. My 
+                        goal is to implement a simplistic version of Netflix's 
+                        "Because You Watched [*Name of Movie/TV Show*]", where 
+                        based on a particular movie or show that you watched, 
+                        you are presented with several other movies or shows 
+                        to watch. 
+                    </p>
                 </div>
                 <div class="cleaning-data" id="cleaning">
                     <h2>Cleaning the Data</h2>
+                    <p>
+                        In order to implement the recommendation system I first 
+                        needed to find a dataset. I began by researching Netflix 
+                        datasets and decided to use the one from Kaggle because 
+                        it included the most updated list of titles. This 
+                        dataset contains the following dimensions:
+                    </p>
+                    <img src="img/dataset.png">
+                    <p>
+                        To clean the data, I reformatted all the lists that 
+                        were represented as strings into a list datatype. I 
+                        also standardized the strings by lowercasing each list 
+                        entry and deleted all whitespaces. Cleaning the data 
+                        also included creating the “soup” column. This column 
+                        is a string containing all the relevant features, 
+                        concatenated together. The features I chose to include 
+                        in the “soup” were: type (movie or tv show), director, 
+                        top three cast members, country, and top 3 listed_in 
+                        (meaning the genre of the content).
+                    </p>
                 </div>
                 <div class="exploratory-analysis" id="exploratory">
                     <h2>Exploratory Analysis</h2>

@@ -74,6 +74,14 @@ h2 {
 .process-content p {
     line-height: 28px;
     font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.cleaning-data img {
+    width: 50%;
+    padding: 18px;
+    display: block;
+    margin: auto;
 }
 
 
