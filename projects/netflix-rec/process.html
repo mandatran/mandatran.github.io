@@ -105,6 +105,28 @@
                 </div>
                 <div class="build-rec" id="build">
                     <h2>Building the Recommendation System</h2>
+                    <p>
+                        To create the classifier I first imported 
+                        CountVectorizer from sklearn in order to create the 
+                        count matrix. The CountVectorizer tokenizes the “soup” 
+                        column, or in other words, converts the words in “soup” 
+                        into a vector containing the counts of each of the 
+                        words depending on the title it belongs to. This is 
+                        called the count_matrix. I then standardized the 
+                        elements in the count_matrix. We can use the 
+                        cosine_similarity function from sklearn to calculate 
+                        the cosine similarity for the count matrix that was 
+                        created. The cosine similarity finds the “distance” 
+                        between two titles, or how similar two titles are in 
+                        the dataset. After calculating all the cosine 
+                        similarities, we can retrieve the recommendations by 
+                        retrieving a sorted list of the cosine similarities 
+                        between a particular title and all the other titles in 
+                        the dataset. Then, I decided to return the top 10 
+                        titles that were mapped to the top cosine similarities 
+                        scores. These results are the recommended titles to 
+                        the given title!
+                    </p>
                 </div>
                 <div class="examples-rec" id="examples">
                     <h2>Examples: The Recommendation System in Action</h2>
@@ -115,6 +137,7 @@
             </div>
             <div class="ignite-slides" id="ignite">
                 <h1>Ignite Presentation Slides</h1>
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSg2uoHoLfCzGV4gaHycIpON7fi_1JL8Dzf0ta7Y4no5Qd-2QPfhjCDQRRJAUKl84RecNDtzdLraYou/embed?start=false&loop=false&delayms=15000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
             </div>
         </div>
     </body>

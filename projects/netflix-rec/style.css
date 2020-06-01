@@ -217,6 +217,7 @@ body {
  ******************************************************************************/
 .home-descrip {
     padding-top: 80px;
+    padding-bottom: 50px;
     width: 75%;
     margin: auto;
 }
@@ -229,13 +230,25 @@ body {
     text-align: center;
 }
 
-.netflix-rec {
+.netflix-rec img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 80px;
     width: 50%;
-
+}
+@media screen and (max-width: 480px) {
+    .home-descrip {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .home-descrip h1 {
+        text-align: center;
+        font-size: 48px;
+        line-height: 54px;
+    }
+    .netflix-rec img {
+        width: 80%;
+    }
 }
 
 /*
