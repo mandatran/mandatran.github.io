@@ -77,11 +77,23 @@ h2 {
     margin-bottom: 32px;
 }
 
-.cleaning-data img {
+.process-content img {
     width: 50%;
     padding: 18px;
     display: block;
     margin: auto;
+}
+
+.jupyter-notebook img {
+    width: 70%;
+}
+
+.jupyter-notebook img:hover {
+    width: 72%;
+}
+
+.jupyter-notebook p {
+    text-align: center;
 }
 
 .ignite-slides iframe {
