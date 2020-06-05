@@ -84,6 +84,14 @@ h2 {
     margin: auto;
 }
 
+.long-img img {
+    width: 80%;
+}
+
+.examples-rec img {
+    width: 80%;
+}
+
 .jupyter-notebook img {
     width: 70%;
 }

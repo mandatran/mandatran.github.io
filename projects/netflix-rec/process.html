@@ -102,6 +102,49 @@
                 </div>
                 <div class="exploratory-analysis" id="exploratory">
                     <h2>Exploratory Analysis</h2>
+                    <p>
+                        As a preliminary step to further understand the data 
+                        in the Kaggle dataset, I decided to conduct a small 
+                        exploratory analysis. First I took a look at the 
+                        number of movies vs. tv shows in the dataset.
+                        <img src="img/typeGraph.png">
+                        From this chart, we can see that Netflix has many more 
+                        movie titles than series titles, which makes sense 
+                        because series include a collection of episodes which 
+                        in total is much longer than a single movie.
+                        <br><br>
+                        Next, I decided to plot the count of movie/tv show ratings. 
+                        <div class="long-img">
+                            <img src="img/ratingsGraph.png">
+                        </div>
+                        From the graph we can see that the most common ratings 
+                        are TV-MA and TV-14. The graph suggests that there is 
+                        a greater number of mature content than kid friendly 
+                        content on Netflix’s platform. This tells potential 
+                        customers about the proportion of the content on 
+                        Netflix and can help them decide on whether or not 
+                        Netflix is the optimal streaming service for them 
+                        based on the content that they are looking for.
+                        <br><br>
+                        I then plotted the number of seasons per tv show.
+                        <div class="long-img">
+                            <img src="img/seasonsGraph.png">
+                        </div>
+                        The graph illustrates that the vast majority of the tv 
+                        shows on Netflix only have 1 season. This could 
+                        indicate that the shows on Netflix are very new and 
+                        thus only have one season released, the shows were 
+                        canceled after one season, or Netflix only provides 
+                        the first season. Another interesting thing to note 
+                        about the graph is that the greatest number of seasons 
+                        for a show is 15.
+                        <br><br>
+                        Similarly to the graph above, I decided to plot the 
+                        duration of movies in minutes.
+                        <img src="img/minGraph.png">
+                        Most movies fall just below the 100 min mark, which 
+                        corresponds with the typical 90-min long movies.
+                    </p>
                 </div>
                 <div class="build-rec" id="build">
                     <h2>Building the Recommendation System</h2>
@@ -130,6 +173,7 @@
                 </div>
                 <div class="examples-rec" id="examples">
                     <h2>Examples: The Recommendation System in Action</h2>
+                    <img src="img/recommendations.gif">
                 </div>
             </div>
             <div class="jupyter-notebook" id="jupyter">
