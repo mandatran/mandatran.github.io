@@ -1,0 +1,26 @@
+.home {
+    height: 100%;
+    padding-top: 35vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+
+    &__name {
+        text-align: center;
+
+        &--text {
+            display: inline-block;
+            text-align: left;
+            line-height: 4.8rem;
+        }
+
+        &--first {
+            color: $primary-color;
+        }
+
+        p {
+            padding-right: calc(50vw - 9rem);
+            text-align: right;
+        }
+    }
+}
