@@ -98,7 +98,8 @@
             }
 
             &.active > a {
-                text-decoration: underline;
+                background: $primary-color;
+                color: $secondary-color;
             }
         }
 
@@ -106,7 +107,7 @@
             display: inline-block;
             font-size: 2rem;
             text-transform: uppercase;
-            padding: 1.5rem 0;
+            padding: 1.25rem;
             font-weight: 300;
             @include transition-ease;
 

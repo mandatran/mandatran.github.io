@@ -151,14 +151,15 @@
 }
 
 .nav .menu-nav__item.active > a {
-  text-decoration: underline;
+  background: #111111;
+  color: #eeeeee;
 }
 
 .nav .menu-nav__link {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
-  padding: 1.5rem 0;
+  padding: 1.25rem;
   font-weight: 300;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -186,6 +187,24 @@
 .menu-nav__item:nth-child(4) {
   -webkit-transition-delay: 0.55s;
           transition-delay: 0.55s;
+}
+
+.about {
+  position: absolute;
+  top: 15vh;
+  padding-bottom: 6.55rem;
+  height: auto;
+}
+
+.about__bio {
+  width: 70%;
+  float: right;
+  padding-right: 4rem;
+}
+
+.about__bio p {
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 body {
@@ -216,36 +235,48 @@ header {
   padding: 1rem;
 }
 
+.page--title {
+  white-space: nowrap;
+  position: absolute;
+  -webkit-transform: translateX(-40%) translateY(350%) rotate(-90deg);
+          transform: translateX(-40%) translateY(350%) rotate(-90deg);
+}
+
 main {
   height: 100%;
   width: 100%;
 }
 
-main .social-icons {
-  font-size: 0.75rem;
-  position: fixed;
-  bottom: 4rem;
-  width: 100%;
-  margin: auto;
-  text-align: center;
-}
-
-main .social-icons a {
-  padding: 0.4rem;
-}
-
-main .social-icons a:hover {
-  background-color: #111111;
-  color: #eeeeee;
-}
-
 footer {
+  background: #eeeeee;
+}
+
+footer p {
   font-size: 1rem;
-  position: fixed;
+  position: absolute;
   bottom: 0.4rem;
   width: 100%;
   margin: auto;
   text-align: center;
   padding: 1rem;
+}
+
+footer .social-icons {
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+footer .social-icons a {
+  padding: 0.4rem;
+  display: inline-block;
+}
+
+footer .social-icons a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,7 @@
 @import 'config';
 @import 'home';
 @import 'menu';
+@import 'about';
 
 body {
     color: $primary-color;
@@ -31,35 +32,46 @@ header {
     padding: 1rem;
 }
 
+// Positions horizontal Page Title for About, Projects, Contact
+.page--title {
+    white-space: nowrap;
+    position: absolute;
+    transform: translateX(-40%) translateY(350%) rotate(-90deg);
+}
+
 main {
     height: 100%;
     width: 100%;
-    
+}
+
+footer {
+        background: $secondary-color;
+    p {
+        font-size: 1rem;
+        position: absolute;
+        bottom: 0.4rem;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 1rem;
+    }
+
     .social-icons {
         font-size: 0.75rem;
-        position: fixed;
-        bottom: 4rem;
+        position: absolute;
+        bottom: 3rem;
         width: 100%;
         margin: auto;
         text-align: center;
 
         a {
             padding: 0.4rem;
+            display: inline-block;
 
             &:hover {
-                background-color: $primary-color;
-                color: $secondary-color;
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
             }
         }
     }
-}
-
-footer {
-    font-size: 1rem;
-    position: fixed;
-    bottom: 0.4rem;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding: 1rem;
 }
