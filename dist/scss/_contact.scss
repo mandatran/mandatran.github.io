@@ -1,11 +1,12 @@
 .contact {
     height: 100%;
     padding-top: 15vh;
-    overflow: hidden;
     align-items: center;
     text-align: center;
 
     &__header {
+        width: 60%;
+        margin: auto;
         padding-bottom: 2rem;
     }
 
