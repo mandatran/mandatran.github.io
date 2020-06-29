@@ -38,7 +38,7 @@
         padding: 2rem;
         border: 0.1rem solid $primary-color;
         overflow: hidden;
-        cursor: pointer;
+        //cursor: pointer;  // change when pop-up is implemented
         @include transition-ease;
         
         &--title {

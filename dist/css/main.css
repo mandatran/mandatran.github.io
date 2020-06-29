@@ -290,7 +290,6 @@
   padding: 2rem;
   border: 0.1rem solid #111111;
   overflow: hidden;
-  cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
