@@ -1,13 +1,14 @@
  .about {
      position: absolute;
      top: 15vh;
-     padding-bottom: 6.55rem;
-     height: max(auto, calc(100%-6.55rem));
+     //height: max(auto, calc(100%-6.55rem));
 
      &__bio {
         width: 70%;
-        float: right;
+        left: 0;
+        margin-left: calc(30%);
         padding-right: 4rem;
+        min-height: calc(85vh - 6.55rem);
 
         p {
             line-height: 1.5rem;
