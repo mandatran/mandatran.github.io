@@ -17,19 +17,6 @@
 }
 
 .home__name {
-  /*
-        align-items: center;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        height: calc(100% - 6.55rem);
-        flex-direction: column;
-        margin: auto;
-        */
-  /*
-        display: inline-block;
-        vertical-align: middle;
-        */
   margin: auto;
 }
 
@@ -44,11 +31,6 @@
 }
 
 .home__name p {
-  /*
-            text-align: right;
-            display: inline-block;
-            justify-content: right;
-            */
   text-align: right;
 }
 
@@ -238,13 +220,6 @@
 
 .projects {
   padding-top: 10vh;
-  /*
-    .button {
-        //display: none;
-        display: inline-block;
-        color: transparent;
-    }
-    */
 }
 
 .projects__items {
@@ -308,13 +283,6 @@
 }
 
 .projects__quick-view {
-  /*
-        background: transparent;
-        border: 0;
-        font-size: 100%;
-        font-family: inherit;
-        padding: 0;
-        */
   position: absolute;
   display: none;
   background: #eeeeee;
@@ -580,12 +548,6 @@ header {
           transform: translateX(-40%) translateY(350%) rotate(-90deg);
 }
 
-/*
-main {
-    height: 100%;
-    width: 100%;
-}
-*/
 footer {
   width: 100%;
   margin: auto;

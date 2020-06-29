@@ -18,8 +18,6 @@
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: center;
-        //position: absolute;
-        //bottom: 1rem;
     }
 
     &__btn {
@@ -56,28 +54,9 @@
 
     }
 
-    // style pop up preview window
-    /*
-    .button {
-        //display: none;
-        display: inline-block;
-        color: transparent;
-    }
-    */
-
     &__quick-view {
-        //display: none;
-        /*
-        background: transparent;
-        border: 0;
-        font-size: 100%;
-        font-family: inherit;
-        padding: 0;
-        */
         position: absolute;
         display: none;
-        //height: 60vh;
-        //width: 60vw;
         background: $secondary-color;
         border: 0.1rem solid $primary-color;
 
