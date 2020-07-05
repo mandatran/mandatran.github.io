@@ -1,6 +1,15 @@
 .projects {
     padding-top: 10vh;
 
+    .note {
+        margin: auto;
+        width: 100%;
+        display: block;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
     &__items {
         width: 60vw;
         position: relative;
