@@ -1,4 +1,8 @@
 @include media-md {
+
+    #home-nav-transparent {
+        background: transparent;
+    }
     // show desktop-only (and tablet) items
     .desktop {
         display: block !important;
