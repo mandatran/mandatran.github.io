@@ -1,61 +1,76 @@
 @import 'config';
 @import 'home';
-@import 'menu';
-@import 'about';
 @import 'projects';
+@import 'about';
 @import 'contact';
 @import 'responsive';
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     color: $primary-color;
     //height: 100vh;
-    font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif; 
+    font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
     line-height: 1;
+    list-style: none;
 }
 
-h1, h2, h3 {
-    color: #00000000;
-    font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    color: $primary-color;
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif; 
     font-weight: 900;
-    font-size: 5rem;
-    // outline only and uppercase
-    -webkit-text-stroke: 0.25rem $primary-color;
-    text-transform: uppercase;
+    font-size: 4.5rem;
+    line-height: 4.3rem;
+}
+
+h2 {
+    text-align: center;
 }
 
 h4 {
-    color: $primary-color;
-    font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
-    font-weight: 700;
-    line-height: 1;
+    font-size: 3rem;
+    line-height: 2.8rem;
 }
 
-h5 {
-    color: $primary-color;
-    font-weight: 900;
-    font-size: 5rem;
+// Clickable Objects
+.clickable {
+    padding: 1rem;
+    border: 0.1rem solid $primary-color;
+    margin: 1rem 0;
+    box-shadow: -8px 8px 0 0 $primary-color;
+    @include transition-ease;
+
+    &:hover {
+        box-shadow: none;
+        transform: translate(-8px, 8px);
+        -webkit-transform: translate(-8px, 8px);
+        @include transition-ease;
+    }
+}
+
+h6 {
+    font-size: 2rem;
+    line-height: 2rem;
 }
 
 a {
     color: $primary-color;
     text-decoration: none;
+    font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
-header {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    padding: 1rem;
-}
-
-// Positions horizontal Page Title for About, Projects, Contact
-.page--title {
-    white-space: nowrap;
-    position: absolute;
-    transform: translateX(-40%) translateY(350%) rotate(-90deg);
-}
-
+// FOOTER
 footer {
+    color: $secondary-color;
+    background: $primary-color;
+    padding-top: 1rem;
     width: 100%;
     margin: auto;
     clear: both;
@@ -77,6 +92,7 @@ footer {
         text-align: center;
 
         a {
+            color: $secondary-color;
             padding: 0.4rem;
             display: inline-block;
             @include transition-ease;
@@ -88,9 +104,4 @@ footer {
             }
         }
     }
-}
-
-// mobile-first approach, don't display desktop-only items
-.desktop {
-    display: none;
 }
