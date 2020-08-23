@@ -1,88 +1,306 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Manda Tran</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./dist/css/main.css">
     <!-- Import fonts: Playfair Display & Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Raleway:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <!-- FavIcon -->
     <link rel="icon" type="image/png" sizes="32x32" href="dist/img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="dist/img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="dist/img/favicon_io/site.webmanifest">
 </head>
-<body id="background-img">
-    <header>
-        <!-- Hamburger Button for Mobile Layout -->
-        <div class="menu-btn">
-            <span class="menu-btn__burger"></span>
-        </div>
-
-        <!-- Nav Bar Links -->
-        <nav class="nav" id="home-nav-transparent">
-            <ul class="menu-nav" id="home-nav-transparent">
-                <li class="menu-nav__item active" id="home-nav-transparent">
-                    <a href="index.html" class="menu-nav__link">
-                        Home
-                    </a>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid"
+        <a class="navbar-brand" href="#"><h6>Manda Tran</h6></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                 </li>
-                <li class="menu-nav__item" id="home-nav-transparent">
-                    <a href="about.html" class="menu-nav__link">
-                        About 
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
-                <li class="menu-nav__item" id="home-nav-transparent">
-                    <a href="projects.html" class="menu-nav__link">
-                        Projects
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
                 </li>
-                <li class="menu-nav__item" id="home-nav-transparent">
-                    <a href="contact.html" class="menu-nav__link">
-                        Contact
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main class="home-main">
+    <!-- Home Page -->
+    <main>
         <section class="home">
-            <div class="home__name">
-                <h1 class="home__name--text">
-                    Hi, I'm
-                    <br>
-                    <span class="home__name--first">Manda</span>
-                </h1>
-                <p>
-                    Software Engineer, 
-                    <br>Web Developer, 
-                    <br>& Machine Learning 
-                    <br>Student
-                </p>
+            <div class="container">
+                <div class="row">
+                      <!--
+                  <div class="col-md, small" id="my-avatar">
+                      <img src="dist/img/myAvatar.png" alt="my avatar">
+                  </div>
+                      -->
+                  <div class="col-sm">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column home__name">
+                            <div class="p-2">
+                                <h1 class="home__name--text">
+                                    Hi, I'm Manda.
+                                </h1>
+                            </div>
+                            <div class="p-2">
+                                <p>
+                                    I am a software engineer, a researcher, and a machine learning student.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="align-self-center">
+                            <img src="dist/img/myAvatar.png" class="float-left" alt="my avatar">
+                        </div>
+                        
+                    </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="resume-btn clickable">
+                                <a href="https://drive.google.com/file/d/1nlGbtDrbzHiz9jb3X8JzJYI1RpUSzVl-/view?usp=sharing" target="_blank">
+                                    <h4>Resume</h4>
+                                </a>
+                            </div>
+                        </div>
+                    <!--
+                      <div class="home__name align-middle">
+                        <h1 class="home__name--text">
+                            Hi, I'm Manda.
+                        </h1>
+                        <p>
+                            I am a software engineer, a researcher, and a machine learning student.
+                        </p>
+                      </div>
+                -->
+                  </div>
+                  <!--
+                        <img src="dist/img/myAvatar.png" class="float-left" alt="my avatar">
+                  -->
+                </div>
             </div>
 
 
-            <footer>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/manda-tran/" target="_blank">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                    </a>
-                    <a href="https://github.com/mandatran" target="_blank">
-                        <i class="fab fa-github fa-2x"></i>
-                    </a>
-                    <a href="mailto: mandatran3@gmail.com" target="_blank">
-                        <i class="fas fa-envelope fa-2x"></i>
-                    </a>
+        </section>
+
+        <!-- Project -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                    <div class="project">
+                        <div class="col-sm clickable">
+                            <a href="https://github.com/mandatran/mandatran.github.io" target="_blank">
+                            <div class="projects__item">
+                                <h4 class="projects__item--title">01. Portfolio Website Archives</h4>
+                                <p class="tools-tech desktop"><b>Tools/Technologies:</b> HTML, CSS/SASS, Bootstrap, JavaScript, Figma</p>
+                                <!--
+                                <div class="projects__btns">
+                                    <a href="#!" class="projects__btn">
+                                        <i class="fas fa-eye"></i> Preview
+                                    </a>
+                                    <a href="https://github.com/mandatran/mandatran.github.io" target="_blank" class="projects__btn">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                                -->
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="col-sm clickable">
+                            <a href="https://github.com/COGS108/FinalProjects-Wi20/blob/master/FinalProject_group071.ipynb" target="_blank" class="projects__btn">
+                            <div class="projects__item ">
+                                <h4 class="projects__item--title">02. Yelp: Fast Food Rating Analysis</h4>
+                                <p class="tools-tech desktop"><b>Tools/Technologies:</b> Python (Seaborns, Matplotlib, Pandas, Numpy, Geopandas, Scipy), Jupyter Notebooks</p>
+                                <!--
+                                <div class="projects__btns">
+                                    <a href="#!" class="projects__btn">
+                                        <i class="fas fa-eye"></i> Preview
+                                    </a>
+                                    <a href="https://github.com/COGS108/FinalProjects-Wi20/blob/master/FinalProject_group071.ipynb" target="_blank" class="projects__btn">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                                -->
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="col-sm clickable">
+                            <a href="https://github.com/mandatran/MLProjects/blob/master/Classification/NetflixRec/NetflixRec.ipynb" target="_blank" class="projects__btn">
+                            <div class="projects__item">
+                                <h4 class="projects__item--title">03. Netlix: Recommen&shy;dation System</h4>
+                                <p class="tools-tech desktop"><b>Tools/Technologies:</b> HTML, CSS, JavaScript, Python (Pandas, Matplotlib, Numpy, SciKitLearn), Jupyter Notebooks</p>
+                                <!--
+                                <div class="projects__btns">
+                                    <a href="#!" class="projects__btn">
+                                        <i class="fas fa-eye"></i> Preview
+                                    </a>
+                                    <a href="https://github.com/mandatran/MLProjects/blob/master/Classification/NetflixRec/NetflixRec.ipynb" target="_blank" class="projects__btn">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                                -->
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="col-sm clickable">
+                            <a href="https://github.com/thoughtstem/Summer2019" target="_blank" class="projects__btn">
+                            <div class="projects__item">
+                                <h4 class="projects__item--title">04. ThoughtSTEM: Kata Collections</h4>
+                                <p class="tools-tech desktop"><b>Tools/Technologies:</b> Racket, Scribble</p>
+                                <!--
+                                <div class="projects__btns">
+                                    <a href="#!" class="projects__btn">
+                                        <i class="fas fa-eye"></i> Preview
+                                    </a>
+                                    <a href="https://github.com/thoughtstem/Summer2019" target="_blank" class="projects__btn">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
+                                </div>
+                                -->
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    </div>
                 </div>
 
-                <p>&copy; 2020 Manda Tran</p>
-            </footer>
         </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2>About</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- Profile Pic -->
+                        <img src="dist/img/profile-pic.jpg" alt="profile picture">
+
+                    </div>
+                    <!-- About Me -->
+                    <div class="col-md-8">
+                        <div class="about__text">
+                            <p>
+                                Currently a <b>QA Engineer Intern</b> at Hive Media Group
+                                and <b>Undergraduate Researcher</b> at the Center of Applied
+                                Internet Data Analysis (CAIDA).
+                            </p>
+                            <p>
+                                Also a rising fourth year 
+                                student at UCSD where I study <b>Cognitive Science - Machine 
+                                Learning and am minoring in Computer Science and 
+                                Mathematics.</b>
+                            </p>
+                            <p>
+                                Formerly <b>Advertising Operations Intern</b> at Hive Media Group,
+                                <b>Computer Science Tutor</b> at UCSD, and a
+                                    <b>Software Engineering Intern</b> at ThoughtSTEM.
+                            </p>
+                            <p>
+                                Things I Like: petting dogs, hippo campus, breakfast foods, & pastel purple.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Let's Talk!</h2>
+
+                <div class="contact__list">
+                    <div class="row">
+                        <div class="col-md contact__item">
+                           <div class="clickable">
+                                <a href="mailto:mandatran3@gmail.com" target="_blank">
+                                    <li><h4>01. Email</h4>
+                                        <li class="sub-list">mandatran3@gmail.com</li>
+                                    </li>
+                                </a>
+                           </div>
+                        </div>
+                        <div class="col md contact__item">
+                           <div class="clickable">
+                                <a href="https://www.linkedin.com/in/manda-tran/" target="_blank">
+                                    <li><h4>02. LinkedIn</h4>
+                                        <li class="sub-list">/in/manda-tran</li>
+                                    </li>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col md contact__item">
+                           <div class="clickable">
+                                <a href="https://github.com/mandatran" target="_blank">
+                                    <li><h4>03. GitHub</h4>
+                                        <li class="sub-list">/mandatran</li>
+                                    </li>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col md contact__item">
+                           <div class="clickable">
+                                <a href="https://drive.google.com/file/d/1nlGbtDrbzHiz9jb3X8JzJYI1RpUSzVl-/view?usp=sharing" target="_blank">
+                                    <li><h4>04. Resume</h4>
+                                        <li class="sub-list"> Manda_Tran_Resume.pdf </li>
+                                    </li>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/manda-tran/" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/mandatran" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="mailto: mandatran3@gmail.com" target="_blank">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
+
+            <p>&copy; 2020 Manda Tran</p>
+        </footer>
     </main>
 
+    <!-- JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Social Icons -->
     <script src="https://kit.fontawesome.com/c7af48cee3.js" crossorigin="anonymous"></script>
+    <!-- My JS-->
     <script src="./dist/js/main.js"></script>
-    
 </body>
 </html>
