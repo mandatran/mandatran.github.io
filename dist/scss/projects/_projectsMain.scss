@@ -1,0 +1,50 @@
+
+.project-sec {
+    background-color: $primary-color;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $secondary-color;
+    }
+
+    p {
+        color: $secondary-color;
+        line-height: 1.5rem;
+    }
+
+    // change to dark theme for nav bar
+    .navbar-dark {
+        background-color: $primary-color;
+        a {
+            color: $secondary-color;
+        }
+        .navbar-brand {
+            h6 {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    .project {
+        .row {
+            padding-top: 10vh;
+        }
+
+        .summary {
+            padding-bottom: 5vh;
+
+            .project-title {
+                padding-bottom: 3vh;
+            }
+        }
+
+        .preview {
+            img {
+                display: block;
+                width: 80%;
+                height: 50%;
+                object-fit: cover;
+                margin: auto;
+            }
+        }
+    }
+}

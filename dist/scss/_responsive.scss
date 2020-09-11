@@ -2,11 +2,20 @@
     html {
         font-size: 10px;
     }
+    // make text larger in mobile menu
+    .collapse {
+            font-size: 1.5rem;
+    }
 }
 
 @include media-sm {
     html {
         font-size: 14px;
+    }
+    
+    // make nav text smaller when not collapsed
+    .collapse {
+            font-size: 1rem;
     }
 }
 

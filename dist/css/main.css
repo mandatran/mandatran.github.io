@@ -112,15 +112,67 @@
           box-shadow: -8px 8px 0 0 #FFFFFF;
 }
 
+.project-sec {
+  background-color: #0F0F0F;
+}
+
+.project-sec h1, .project-sec h2, .project-sec h3, .project-sec h4, .project-sec h5, .project-sec h6 {
+  color: #FFFFFF;
+}
+
+.project-sec p {
+  color: #FFFFFF;
+  line-height: 1.5rem;
+}
+
+.project-sec .navbar-dark {
+  background-color: #0F0F0F;
+}
+
+.project-sec .navbar-dark a {
+  color: #FFFFFF;
+}
+
+.project-sec .navbar-dark .navbar-brand h6 {
+  color: #FFFFFF;
+}
+
+.project-sec .project .row {
+  padding-top: 10vh;
+}
+
+.project-sec .project .summary {
+  padding-bottom: 5vh;
+}
+
+.project-sec .project .summary .project-title {
+  padding-bottom: 3vh;
+}
+
+.project-sec .project .preview img {
+  display: block;
+  width: 80%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+}
+
 @media screen and (min-width: 0px) {
   html {
     font-size: 10px;
+  }
+  .collapse {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 576px) {
   html {
     font-size: 14px;
+  }
+  .collapse {
+    font-size: 1rem;
   }
 }
 
@@ -221,7 +273,6 @@ a:hover {
 
 .navbar a:hover {
   color: #0F0F0F;
-  font-weight: bold;
 }
 
 .underlineNav {

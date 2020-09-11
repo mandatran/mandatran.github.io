@@ -3,6 +3,7 @@
 @import 'projects';
 @import 'about';
 @import 'contact';
+@import 'projects/projectsMain';
 @import 'responsive';
 
 html {
@@ -73,7 +74,6 @@ a {
 
     a:hover {
         color: $primary-color;
-        font-weight: bold;
     }
 }
 
