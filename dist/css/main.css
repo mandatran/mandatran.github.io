@@ -153,6 +153,7 @@
 
 html {
   scroll-behavior: smooth;
+  --scroll-behavior: smooth;
 }
 
 body {
@@ -216,6 +217,11 @@ a:hover {
 
 .navbar {
   background-color: #FFFFFF;
+}
+
+.navbar a:hover {
+  color: #0F0F0F;
+  font-weight: bold;
 }
 
 .underlineNav {

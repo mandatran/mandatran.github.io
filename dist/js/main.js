@@ -1,3 +1,10 @@
+/*
+import smoothscroll from "smoothscroll-polyfill";
+
+// kick off the polyfill!
+smoothscroll.polyfill();
+*/
+
 /************************************************************
  * Underline Menu Bar on Scroll
  * src: https://codepen.io/jasperreyes/pen/doqgdP
@@ -10,35 +17,27 @@ $(window).scroll(function() {
   }
 });
 
-
-
+/************************************************************
+ * Smooth Scroll Safari fix
+ * src: https://stackoverflow.com/questions/51229742/javascript-window-scroll-behavior-smooth-not-working-in-safari
+************************************************************/
 /*
-const menuBtn = document.querySelector('.menu-btn');
-const hamburger = document.querySelector('.menu-btn__burger');
-const nav = document.querySelector('.nav');
-const menuNav = document.querySelector('.menu-nav');
-const navItems = document.querySelectorAll('.menu-nav__item');
-
-let showMenu = false;
-
-menuBtn.addEventListener('click', toggleMenu);
-
-function toggleMenu() {
-    if (!showMenu) {
-        // assign class as "open"
-        hamburger.classList.add('open');
-        nav.classList.add('open');
-        menuNav.classList.add('open');
-        showMenu = true;
-        navItems.forEach(item => item.classList.add('open'));
-    }
-    else {
-        // remove class from "open"
-        hamburger.classList.remove('open');
-        nav.classList.remove('open');
-        menuNav.classList.remove('open');
-        showMenu = false;
-        navItems.forEach(item => item.classList.remove('open'));
-    }
+function SmoothVerticalScrolling(e, time, where) {
+  var eTop = e.getBoundingClientRect().top;
+  var eAmt = eTop / 100;
+  var curTime = 0;
+  while (curTime <= time) {
+      window.setTimeout(SVS_B, curTime, eAmt, where);
+      curTime += time / 100;
+  }
 }
+
+function SVS_B(eAmt, where) {
+  if(where == "center" || where == "")
+      window.scrollBy(0, eAmt / 2);
+  if (where == "top")
+      window.scrollBy(0, eAmt);
+}
+
+SmoothVerticalScrolling('#projects', 275, "center");
 */
