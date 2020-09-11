@@ -36,7 +36,7 @@
 }
 
 .projects a, .projects p, .projects h1, .projects h2, .projects h3, .projects h4 {
-  color: #f5f5f5;
+  color: #FFFFFF;
 }
 
 .projects .project {
@@ -44,9 +44,9 @@
 }
 
 .projects .clickable {
-  border: 0.1rem solid #f5f5f5;
-  -webkit-box-shadow: -8px 8px 0 0 #f5f5f5;
-          box-shadow: -8px 8px 0 0 #f5f5f5;
+  border: 0.1rem solid #FFFFFF;
+  -webkit-box-shadow: -8px 8px 0 0 #FFFFFF;
+          box-shadow: -8px 8px 0 0 #FFFFFF;
 }
 
 .projects .container {
@@ -86,7 +86,7 @@
 }
 
 .contact a, .contact p, .contact h1, .contact h2, .contact h3, .contact h4 {
-  color: #f5f5f5;
+  color: #FFFFFF;
 }
 
 .contact .container {
@@ -107,9 +107,9 @@
 }
 
 .contact .clickable {
-  border: 0.1rem solid #f5f5f5;
-  -webkit-box-shadow: -8px 8px 0 0 #f5f5f5;
-          box-shadow: -8px 8px 0 0 #f5f5f5;
+  border: 0.1rem solid #FFFFFF;
+  -webkit-box-shadow: -8px 8px 0 0 #FFFFFF;
+          box-shadow: -8px 8px 0 0 #FFFFFF;
 }
 
 @media screen and (min-width: 0px) {
@@ -214,8 +214,18 @@ a:hover {
   text-decoration: none;
 }
 
+.navbar {
+  background-color: #FFFFFF;
+}
+
+.underlineNav {
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 10px #d3d3d3;
+          box-shadow: 0px 1px 10px #d3d3d3;
+}
+
 footer {
-  color: #f5f5f5;
+  color: #FFFFFF;
   background: #0F0F0F;
   padding-top: 1rem;
   width: 100%;
@@ -241,7 +251,7 @@ footer .social-icons {
 }
 
 footer .social-icons a {
-  color: #f5f5f5;
+  color: #FFFFFF;
   padding: 0.4rem;
   display: inline-block;
   -webkit-transition: all 0.5s ease-in-out;

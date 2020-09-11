@@ -66,6 +66,18 @@ a {
     }
 }
 
+// TOP NAV MENU
+.navbar {
+    background-color: $secondary-color;
+
+}
+
+.underlineNav {
+    border-radius: 2px;
+    box-shadow: 0px 1px 10px $tertiary-color;
+}
+
+
 // FOOTER
 footer {
     color: $secondary-color;
