@@ -67,6 +67,10 @@
   padding-bottom: 1rem;
 }
 
+.about .row {
+  margin: 0;
+}
+
 .about img {
   max-width: 100%;
   padding: 3rem;
