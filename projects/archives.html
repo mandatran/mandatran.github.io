@@ -44,8 +44,8 @@
 
     <!-- Project Content -->
     <main>
-        <section class="project">
-            <div class="container">
+        <section class="my-project">
+            <div class="container top">
                 <!-- Overview, description of project-->
                 <div class="row">
                     <div class="col-sm-6 summary">
@@ -56,25 +56,87 @@
                         </p>
 
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 descrip">
                         <h4>Timeline</h4>
                         <p>Sept 2019 - Ongoing</p>
-                        <h4>Tools/Technologies</h4>
+                        <h4>Tools & Technologies</h4>
                         <p>HTML, CSS/SASS, Bootstrap, JavaScript, Figma</p>
                         <h4>Current Iteration</h4>
                         <p>Version 5</p>
+                        
+                        <div class="d-flex projects">
+                            <div class="clickable">
+                                <a href="https://github.com/mandatran/mandatran.github.io" target="_blank">
+                                    <h4>&lt;/&gt; Code</h4>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Preview of Project -->
-                <div class="row preview">
-                    <div class="col-sm">
-                        <img src="../dist/img/profile-pic.jpg"
+                <div class="row preview" id="imgClickAndChange" onclick="changePreview()">
+                    <div class="col-sm img-container projects">
+                        <!--
+                        <img class="clickable" id="imgClickAndChange" src="../dist/img/profile-pic.jpg" onclick="changeImage()">
+                        -->
+                        <div class="iframe-container" >
+                            <iframe id="web-preview" src="../archive/v4/index.html" title="old website preview">
+                            </iframe>
+                        </div>
+                        <p>* Click anywhere around the frame to change the preview! *</p>
                     </div>
-
                 </div>
-                <!-- Links to projects -->
-                <div class="row">
 
+                <!-- Links to projects -->
+                <div class="row projects">
+                    <div class="container">
+                        <h3>Previous Website Links</h3>
+                            <div class="project">
+                                <div class="col-sm clickable">
+                                    <a href="../archive/v4/index.html" target="_blank">
+                                    <div class="projects__item">
+                                        <h4 class="projects__item--title">Version 04. June 2020</h4>
+                                        <p>Created mockups using Figma before starting to code. At this point I started using SASS and incorporated some JavaScript to deal with the hamburger menu. Many of the design concepts from this iteration were transferred over to the current version.</p>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="project">
+                                <div class="col-sm clickable">
+                                    <a href="../archive/v3/index.html" target="_blank">
+                                    <div class="projects__item ">
+                                        <h4 class="projects__item--title">Version 03. March 2020</h4>
+                                        <p>Completed using only HTML and CSS. Very much the same structure as V2. This is when I started adding projects to my website.</p>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="project">
+                                <div class="col-sm clickable">
+                                    <a href="../archive/v2/index.html" target="_blank">
+                                    <div class="projects__item">
+                                        <h4 class="projects__item--title">Version 02. January 2020</h4>
+                                        <p>This was my first completed website using HTML and CSS. Used a mobile-first design approach.</p>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="project">
+                                <div class="col-sm clickable">
+                                    <a href="../archive/v1/index.html" target="_blank">
+                                    <div class="projects__item">
+                                        <h4 class="projects__item--title">Version 01. December 2019</h4>
+                                        <p>A primarily incomplete website: only the homepage was created. This was before I realized the importance of responsive web-design. Used HTML and CSS only.</p>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
                 </div>
                 <!-- References -->
             </div>

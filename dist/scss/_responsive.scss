@@ -17,6 +17,23 @@
     .collapse {
             font-size: 1rem;
     }
+    // project pages
+
+    .project-sec {
+        .container {
+            width: 100%;
+
+            .iframe-container {
+                width: 80%;
+            }
+        }
+    }
+    .project {
+        &-title {
+            font-size: 3.8rem;
+            line-height: 3.5rem;
+        }
+    }
 }
 
 @include media-md {
@@ -44,6 +61,13 @@
         img {
             float: right;
             padding: 3rem 0 3rem 0;
+        }
+    }
+
+    .project {
+        &-title {
+            font-size: 4.5rem;
+            line-height: 4.3rem;
         }
     }
 }

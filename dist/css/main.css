@@ -137,25 +137,74 @@
   color: #FFFFFF;
 }
 
-.project-sec .project .row {
-  padding-top: 10vh;
+.project-sec .my-project .container.top {
+  padding: 3rem;
+  margin-top: 10vh;
 }
 
-.project-sec .project .summary {
+.project-sec .my-project .summary {
   padding-bottom: 5vh;
 }
 
-.project-sec .project .summary .project-title {
+.project-sec .my-project .summary .project-title {
   padding-bottom: 3vh;
 }
 
-.project-sec .project .preview img {
+.project-sec .my-project .descrip {
+  padding-bottom: 5vh;
+}
+
+.project-sec .my-project .preview {
+  z-index: 10000;
+  cursor: pointer;
+  /*
+            .clickable {
+                border: 0.1rem solid $secondary-color;
+                box-shadow: -8px 8px 0 0 $secondary-color
+                &:hover {
+                    box-shadow: none;
+                }
+            }
+            */
+}
+
+.project-sec .my-project .preview p {
+  padding: 3rem 3rem 1rem 3rem;
+  text-align: center;
+}
+
+.project-sec .my-project .preview .iframe-container {
   display: block;
-  width: 80%;
-  height: 50%;
+  width: 100%;
+  height: 60vh;
   -o-object-fit: cover;
      object-fit: cover;
   margin: auto;
+  padding: 0;
+}
+
+.project-sec .my-project .preview .iframe-container iframe {
+  height: 100%;
+  width: 100%;
+  border: 0rem solid #0F0F0F;
+}
+
+.project-sec .my-project .projects h3 {
+  margin: 0 3rem;
+}
+
+.project-sec .my-project .projects__item {
+  padding: 0;
+}
+
+.project-sec .my-project .projects__item p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.project-sec .my-project .projects__item--title {
+  line-height: normal;
+  padding: 0;
 }
 
 @media screen and (min-width: 0px) {
@@ -173,6 +222,16 @@
   }
   .collapse {
     font-size: 1rem;
+  }
+  .project-sec .container {
+    width: 100%;
+  }
+  .project-sec .container .iframe-container {
+    width: 80%;
+  }
+  .project-title {
+    font-size: 3.8rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -194,6 +253,10 @@
   .about img {
     float: right;
     padding: 3rem 0 3rem 0;
+  }
+  .project-title {
+    font-size: 4.5rem;
+    line-height: 4.3rem;
   }
 }
 
