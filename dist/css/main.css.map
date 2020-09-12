@@ -8,6 +8,7 @@
         "../scss/_projects.scss",
         "../scss/_about.scss",
         "../scss/_contact.scss",
+        "../scss/projects/_projectsMain.scss",
         "../scss/_responsive.scss"
     ],
     "names": [],

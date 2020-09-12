@@ -1,10 +1,3 @@
-/*
-import smoothscroll from "smoothscroll-polyfill";
-
-// kick off the polyfill!
-smoothscroll.polyfill();
-*/
-
 /************************************************************
  * Underline Menu Bar on Scroll
  * src: https://codepen.io/jasperreyes/pen/doqgdP
@@ -17,27 +10,16 @@ $(window).scroll(function() {
   }
 });
 
+
 /************************************************************
- * Smooth Scroll Safari fix
- * src: https://stackoverflow.com/questions/51229742/javascript-window-scroll-behavior-smooth-not-working-in-safari
+ * change preview images in project page on click
+ * src: https://codepen.io/jasperreyes/pen/doqgdP
 ************************************************************/
-/*
-function SmoothVerticalScrolling(e, time, where) {
-  var eTop = e.getBoundingClientRect().top;
-  var eAmt = eTop / 100;
-  var curTime = 0;
-  while (curTime <= time) {
-      window.setTimeout(SVS_B, curTime, eAmt, where);
-      curTime += time / 100;
-  }
-}
+var counter = 1;
+function changePreview() {
 
-function SVS_B(eAmt, where) {
-  if(where == "center" || where == "")
-      window.scrollBy(0, eAmt / 2);
-  if (where == "top")
-      window.scrollBy(0, eAmt);
-}
+  var webPreviews = ["../archive/v4/index.html", "../archive/v3/index.html", "../archive/v2/index.html", "../archive/v1/index.html"]
 
-SmoothVerticalScrolling('#projects', 275, "center");
-*/
+  document.getElementById("web-preview").src = webPreviews[counter%webPreviews.length];
+  counter++;
+}

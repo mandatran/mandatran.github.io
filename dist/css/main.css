@@ -116,15 +116,126 @@
           box-shadow: -8px 8px 0 0 #FFFFFF;
 }
 
+.project-sec {
+  background-color: #0F0F0F;
+}
+
+.project-sec h1, .project-sec h2, .project-sec h3, .project-sec h4, .project-sec h5, .project-sec h6 {
+  color: #FFFFFF;
+}
+
+.project-sec p {
+  color: #FFFFFF;
+  line-height: 1.5rem;
+}
+
+.project-sec .navbar-dark {
+  background-color: #0F0F0F;
+}
+
+.project-sec .navbar-dark a {
+  color: #FFFFFF;
+}
+
+.project-sec .navbar-dark .navbar-brand h6 {
+  color: #FFFFFF;
+}
+
+.project-sec .my-project .container.top {
+  padding: 3rem;
+  margin-top: 10vh;
+}
+
+.project-sec .my-project .summary {
+  padding-bottom: 5vh;
+}
+
+.project-sec .my-project .summary .project-title {
+  padding-bottom: 3vh;
+}
+
+.project-sec .my-project .descrip {
+  padding-bottom: 5vh;
+}
+
+.project-sec .my-project .preview {
+  z-index: 10000;
+  cursor: pointer;
+  /*
+            .clickable {
+                border: 0.1rem solid $secondary-color;
+                box-shadow: -8px 8px 0 0 $secondary-color
+                &:hover {
+                    box-shadow: none;
+                }
+            }
+            */
+}
+
+.project-sec .my-project .preview p {
+  padding: 3rem 3rem 1rem 3rem;
+  text-align: center;
+}
+
+.project-sec .my-project .preview .iframe-container {
+  display: block;
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  padding: 0;
+}
+
+.project-sec .my-project .preview .iframe-container iframe {
+  height: 100%;
+  width: 100%;
+  border: 0rem solid #0F0F0F;
+}
+
+.project-sec .my-project .projects h3 {
+  margin: 0 3rem;
+}
+
+.project-sec .my-project .projects__item {
+  padding: 0;
+}
+
+.project-sec .my-project .projects__item p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.project-sec .my-project .projects__item--title {
+  line-height: normal;
+  padding: 0;
+}
+
 @media screen and (min-width: 0px) {
   html {
     font-size: 10px;
+  }
+  .collapse {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 576px) {
   html {
     font-size: 14px;
+  }
+  .collapse {
+    font-size: 1rem;
+  }
+  .project-sec .container {
+    width: 100%;
+  }
+  .project-sec .container .iframe-container {
+    width: 80%;
+  }
+  .project-title {
+    font-size: 3.8rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -146,6 +257,10 @@
   .about img {
     float: right;
     padding: 3rem 0 3rem 0;
+  }
+  .project-title {
+    font-size: 4.5rem;
+    line-height: 4.3rem;
   }
 }
 
@@ -225,7 +340,6 @@ a:hover {
 
 .navbar a:hover {
   color: #0F0F0F;
-  font-weight: bold;
 }
 
 .underlineNav {
