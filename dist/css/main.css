@@ -126,7 +126,18 @@
 
 .project-sec p {
   color: #FFFFFF;
-  line-height: 1.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.project-sec #internal-link {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.project-sec #internal-link:hover {
+  color: #0F0F0F;
+  background-color: #FFFFFF;
 }
 
 .project-sec .navbar-dark {
@@ -197,6 +208,35 @@
   margin: 0 3rem;
 }
 
+.project-sec .my-project .projects .container.takeaways {
+  margin: 0 3rem;
+}
+
+.project-sec .my-project .projects .container.takeaways h3 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.project-sec .my-project .projects .container.takeaways h4 {
+  margin: 1.2rem 0;
+}
+
+.project-sec .my-project .projects .container.takeaways ul {
+  padding-left: 3rem;
+}
+
+.project-sec .my-project .projects .container.takeaways ul li {
+  list-style-type: circle;
+  color: #FFFFFF;
+  padding-left: 1rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.project-sec .my-project .projects .refs {
+  padding-top: 0;
+}
+
 .project-sec .my-project .projects__item {
   padding: 0;
 }
@@ -227,11 +267,19 @@
   .collapse {
     font-size: 1rem;
   }
+  .project-sec p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
   .project-sec .container {
     width: 100%;
   }
   .project-sec .container .iframe-container {
     width: 80%;
+  }
+  .project-sec .my-project .projects .container.takeaways ul li {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
   }
   .project-title {
     font-size: 3.8rem;

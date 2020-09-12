@@ -8,7 +8,18 @@
 
     p {
         color: $secondary-color;
-        line-height: 1.5rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #internal-link {
+        color: $secondary-color;
+        text-decoration: underline;
+
+        &:hover {
+            color: $primary-color;
+            background-color: $secondary-color;
+        }
     }
 
     // change to dark theme for nav bar
@@ -37,6 +48,7 @@
             .project-title {
                 padding-bottom: 3vh;
             }
+
         }
 
         .descrip {
@@ -80,8 +92,34 @@
         }
 
         .projects {
+            
             h3 {
                 margin: 0 3rem;
+            }
+
+            .container.takeaways {
+                margin: 0 3rem;
+                h3 {
+                    margin: 0;
+                    margin-bottom: 1rem;
+                }
+                h4 {
+                    margin: 1.2rem 0;
+                }
+                ul {
+                    padding-left: 3rem;
+                    li {
+                        list-style-type: circle;
+                        color: $secondary-color;
+                        padding-left: 1rem;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                    }
+                }
+            }
+
+            .refs {
+                padding-top: 0;
             }
         }
         // style project links
