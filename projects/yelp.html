@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Website Archives</title>
+    <title>Yelp Fast Food Analysis</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="../dist/css/main.css">
@@ -49,24 +49,25 @@
                 <!-- Overview, description of project-->
                 <div class="row">
                     <div class="col-sm-6 summary">
-                        <h1 class="project-title">Website Portfolio Archives</h1>
+                        <h1 class="project-title">Yelp: Fast Food Analysis</h1>
                         <!-- Add project description/summary -->
-                        <p>Every previous iteration of this website. 
-                            Purpose is to show my growth in web development and keep track of my progress as my design aesthetics have evolved.
+                        <p> Analyze Yelp data to explore and find trends in the fast food restaurants 
+                            across the United States. Primarily to determine if there exists a correlation 
+                            between the type of cuisine served and the location (state) of the restauarant.
                         </p>
 
                     </div>
                     <div class="col-sm-6 descrip">
                         <h4>Timeline</h4>
-                        <p>Sept 2019 - Ongoing</p>
+                        <p>January 2020 - March 2020</p>
                         <h4>Tools & Technologies</h4>
-                        <p>HTML, CSS/SASS, Bootstrap, JavaScript, Figma</p>
-                        <h4>Current Iteration</h4>
-                        <p>Version 5</p>
+                        <p>Python (Seaborns, Matplotlib, Pandas, Numpy, Geopandas, Scipy), Jupyter Notebooks</p>
+                        <h4>Course</h4>
+                        <p>COGS 108: Data Science in Practice</p>
                         
                         <div class="d-flex projects">
                             <div class="clickable">
-                                <a href="https://github.com/mandatran/mandatran.github.io" target="_blank">
+                                <a href="https://github.com/COGS108/FinalProjects-Wi20/blob/master/FinalProject_group071.ipynb" target="_blank">
                                     <h4>&lt;/&gt; Code</h4>
                                 </a>
                             </div>
@@ -74,71 +75,54 @@
                     </div>
                 </div>
                 <!-- Preview of Project -->
-                <div class="row preview" id="imgClickAndChange" onclick="changePreview()">
+                <div class="row preview">
                     <div class="col-sm img-container projects">
-                        <!--
-                        <img class="clickable" id="imgClickAndChange" src="../dist/img/profile-pic.jpg" onclick="changeImage()">
-                        -->
                         <div class="iframe-container" >
-                            <iframe id="web-preview" src="../archive/v4/index.html" title="old website preview">
+                            <iframe id="web-preview" src="../archive/v3/projects/FinalProject_group071.html" title="Yelp Project Preview">
                             </iframe>
                         </div>
-                        <p>* Click here to change the preview! *</p>
                     </div>
                 </div>
 
                 <!-- Links to projects -->
                 <div class="row projects">
-                    <div class="container">
-                        <h3>Previous Website Links</h3>
-                            <div class="project">
-                                <div class="col-sm clickable">
-                                    <a href="../archive/v4/index.html" target="_blank">
-                                    <div class="projects__item">
-                                        <h4 class="projects__item--title">Version 04. June 2020</h4>
-                                        <p>Created mockups using Figma before starting to code. At this point I started using SASS and incorporated some JavaScript to deal with the hamburger menu. Many of the design concepts from this iteration were transferred over to the current version.</p>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <div class="project">
-                                <div class="col-sm clickable">
-                                    <a href="../archive/v3/index.html" target="_blank">
-                                    <div class="projects__item ">
-                                        <h4 class="projects__item--title">Version 03. March 2020</h4>
-                                        <p>Completed using only HTML and CSS. Very much the same structure as V2. This is when I started adding projects to my website.</p>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="project">
-                                <div class="col-sm clickable">
-                                    <a href="../archive/v2/index.html" target="_blank">
-                                    <div class="projects__item">
-                                        <h4 class="projects__item--title">Version 02. January 2020</h4>
-                                        <p>This was my first completed website using HTML and CSS. Used a mobile-first design approach.</p>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="project">
-                                <div class="col-sm clickable">
-                                    <a href="../archive/v1/index.html" target="_blank">
-                                    <div class="projects__item">
-                                        <h4 class="projects__item--title">Version 01. December 2019</h4>
-                                        <p>A primarily incomplete website: only the homepage was created. 
-                                            This was before I realized the importance of responsive web-design (yikes). 
-                                            Used HTML and CSS only.</p>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            </div>
-                        </div>
+                    <div class="container takeaways">
+                        <h3>Takeaways</h3>
+                        <h4>My Role</h4>
+                        <p>Gather data using the Yelp API, data cleaning, Exploratory Data Analysis (geospatial data maps, popularity), 
+                            Wrote the functions to find average ratings by cuisine for fast food Restaurants, 
+                            Testing Distributions (normality of cuisine ratings).</p>
+                        <h4>Description</h4>
+                        <ul>
+                            <li>
+                                Top rated cuisines differed for fast food restaurant and non fast food restaurants.
+                                <ul>
+                                    <li>
+                                        Top 3 non fast food cuisines were Japanese, Mexican, and Mediterranean, 
+                                        while the top 3 fast food cuisines were Thai, Greek, and Japanese.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                South Dakota had the most fast food restaurants for every 100,000 people.
+                            </li>
+                            <li>
+                                Fast Food Restuarant Ratings:
+                                <ul>
+                                    <li>
+                                        The Halal Guys was the most popular restaurant in our dataset.
+                                    </li>
+                                    <li>
+                                        The Great Steak was the least popular restaurant in our dataset.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Findings</h4>
+                        <p>We concluded that it is very unlikely that cuisines do not affect rating of a non fast food restaurant.</p>
+                        <p>We concluded that the type of cuisine of a non fast food restaurant influences the rating of a restaurant.</p>
+                        <p>We concluded that the type of cuisine does influence the rating of a fast food restaurant.</p>
+                    </div>
                 </div>
                 <!-- References -->
             </div>

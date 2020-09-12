@@ -20,11 +20,27 @@
     // project pages
 
     .project-sec {
+        p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
         .container {
             width: 100%;
 
             .iframe-container {
                 width: 80%;
+            }
+        }
+        .my-project {
+            .projects {
+                .container.takeaways {
+                    ul {
+                        li {
+                            font-size: 1rem !important;
+                            line-height: 1.5rem !important;
+                        }
+                    }
+                }
             }
         }
     }
