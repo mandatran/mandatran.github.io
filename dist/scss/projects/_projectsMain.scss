@@ -139,4 +139,21 @@
             }
         }
     }
+
+    .project-nav {
+        padding: 0 3rem 3rem 3rem;
+        color: $secondary-color;
+        a {
+            font-size: 2rem;
+            color: $secondary-color;
+            padding: 1rem;
+            &:hover {
+                background-color: $secondary-color;
+                color: $primary-color;
+            }
+        }
+        .next {
+            text-align: right;
+        }
+    }
 }

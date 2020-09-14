@@ -251,6 +251,26 @@
   padding: 0;
 }
 
+.project-sec .project-nav {
+  padding: 0 3rem 3rem 3rem;
+  color: #FFFFFF;
+}
+
+.project-sec .project-nav a {
+  font-size: 2rem;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+
+.project-sec .project-nav a:hover {
+  background-color: #FFFFFF;
+  color: #0F0F0F;
+}
+
+.project-sec .project-nav .next {
+  text-align: right;
+}
+
 @media screen and (min-width: 0px) {
   html {
     font-size: 10px;
