@@ -20,7 +20,7 @@ function Copyright() {
   return (
     <Box pb="2rem">
       <Typography variant="body2" color="textSecondary" align="left" >
-        <p>Made with &#10024; and &#128156; by Manda &#169; {new Date().getFullYear()}
+        <p>Made with &#10024; and &#127861; by Manda &#169; {new Date().getFullYear()}
         {'.'} </p>
       </Typography>
     </Box>
@@ -42,7 +42,7 @@ export default function App() {
           <Typography variant="h4" component="h1" className={classes.root} gutterBottom>
             Manda is a software engineer, <br></br>
             undergraduate researcher, <br></br>
-            and math-computer science student .
+            and math-computer science student.
           </Typography>
           <Socials />
         </Box>
