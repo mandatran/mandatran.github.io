@@ -9,6 +9,7 @@ import Socials from './components/Socials';
 import NavBar from './components/NavBar';
 import Research from './components/Research';
 import Projects from './components/Projects';
+import About from './components/About';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,6 +51,7 @@ export default function App() {
 
       <Research />
       <Projects />
+      <About />
       <Copyright />
 
     </Container>
