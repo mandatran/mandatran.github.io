@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/style/main.scss"],"names":[],"mappings":"AAAA,KACI,sBAAuB,CAC1B,MAGG,YAAa,CADjB,oBAIQ,wBAAyB","file":"main.cdbc776b.chunk.css","sourcesContent":["html {\n    box-sizing: content-box;\n}\n\n.home {\n    height: 100vh;\n\n    .home-content {\n        height: calc(100% - 60px);\n        //height: 100%;\n    }\n}"]}
