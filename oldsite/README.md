@@ -1,1 +1,0 @@
-## mandatran.github.io
