@@ -32,7 +32,6 @@ export default function App() {
   const classes = useStyles();
   return (
     <Container maxWidth="md" className="home">
-      <NavBar />
 
       <Box
         className="home-content"
@@ -41,17 +40,14 @@ export default function App() {
         py={-5}>
         <Box my={4}>
           <Typography variant="h4" component="h1" className={classes.root} gutterBottom>
-            Manda is a software engineer, <br></br>
+            Manda is a problem solver, <br></br>
             undergraduate researcher, <br></br>
-            and math-computer science student.
+            and mathematics-computer <br></br>science student.
           </Typography>
           <Socials />
         </Box>
       </Box>
 
-      <Research />
-      <Projects />
-      <About />
       <Copyright />
 
     </Container>
