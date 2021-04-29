@@ -4,7 +4,6 @@ import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
-import profilePic from '../img/profilepic.gif';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,6 +21,7 @@ export default function About() {
   const classes = useStyles();
   return (
     <Box pb={8} >
+        
         <Box pb={2}>
             <Typography variant="h4" component="h1" className={classes.root} gutterBottom>
                 About
@@ -30,7 +30,7 @@ export default function About() {
 
         <Grid container spacing={3}>
             <Grid item xs={12} sm={4}>
-                <img src={profilePic} alt="profile pic" className={classes.img} />
+                {/*<img src={profilePic} alt="profile pic" className={classes.img} /> */}
             </Grid>
             <Grid item xs={12} sm={8} className={classes.aboutTxt} >
                 <Typography gutterBottom>
