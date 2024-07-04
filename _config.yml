@@ -1,6 +1,6 @@
 title: Manda Tran
 url: "https://mandatran.github.io"
-baseurl: "/researcher"
+baseurl: ""
 
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
@@ -17,8 +17,8 @@ sass:
 
 nav:
  - name: "About"
-   link: "/researcher/"
- - name: "Resume"
-   link: "resume.pdf"
+   link: "/"
  - name: "Contact"
    link: "contact"
+#  - name: "Resume"
+#    link: "resume.pdf"
