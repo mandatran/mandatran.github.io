@@ -9,6 +9,10 @@ layout: default
 I am a first-year PhD student in the ECE department at UCLA 
 advised by [Liz Izhikevich](https://lizizhikevich.github.io/).
 
+My research focuses on creating a more secure and performant Internet. 
+I am broadly interested in Internet scanning and building systems to understand 
+global performance over LEO satellite networks.
+
 Previously I graduated from Stanford University with my Master's in Computer Science
 and from UCSD with my Bachelor's in Mathematics-Computer Science.
 
@@ -19,6 +23,7 @@ and from UCSD with my Bachelor's in Mathematics-Computer Science.
 - L. Izhikevich, **M. Tran**, M. Kallitsis, A. Fass, Z. Durumeric. *Cloud Watching: Understanding Attacks Against Cloud-Hosted Services*. In ACM Internet Measurement Conference (IMC), 2023.
 
 ## Lab Affiliations
+- [Security and Networking (SCaN) Lab ](https://ucla-scan.github.io/) at UCLA [2024 - present]
 - [Empirical Security Research Group (ESRG) ](https://esrg.stanford.edu/) at Stanford University [2021-2023]
 - [CAIDA](https://www.caida.org/) at UCSD [2020-2021]
 
